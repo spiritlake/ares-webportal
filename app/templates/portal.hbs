@@ -24,33 +24,35 @@
       {{/if}}
       </div>
 
-      <div class="col-md-8 col-sm-12 col-xs-12 profile-demo-wrap info-box">
-        <div class="infobox-heading">
-          <div class="infobox-title-text">{{this.model.portal.name}} </div>
-          <div class="infobox-body">
-            {{#if this.model.portal.gms}}<i>For more information, see {{#each this.model.portal.gms as |gm|}}
-            {{#link-to 'char' gm.name}}{{gm.name}} {{/link-to}}
-            {{/each}} </i><br> {{/if}}
-            {{#if this.model.portal.location}}<b>Location:</b> {{this.model.portal.location}}<br>  {{/if}}
-            {{#if this.model.portal.primary_school}}
-              <b>Dominant School:</b> {{#link-to 'schools' this.model.portal.primary_school}}
-            {{this.model.portal.primary_school}}
-            {{/link-to}}
-            <br>{{/if}}
-            {{#if this.model.portal.all_schools}}<b>All Schools:</b>
-              {{#each this.model.portal.all_schools as |school|}}
-                {{#link-to 'schools' school}}{{school}}{{/link-to}}
-              {{/each}}<br>
-            {{/if}}
+      <div class="col-md-8 col-sm-12 col-xs-12 profile-demo-wrap">
+        <div class="info-box">
+          <div class="infobox-heading">
+            <div class="infobox-title-text">{{this.model.portal.name}} </div>
+            <div class="infobox-body">
+              {{#if this.model.portal.gms}}<i>For more information, see {{#each this.model.portal.gms as |gm|}}
+              {{#link-to 'char' gm.name}}{{gm.name}} {{/link-to}}
+              {{/each}} </i><br> {{/if}}
+              {{#if this.model.portal.location}}<b>Location:</b> {{this.model.portal.location}}<br>  {{/if}}
+              {{#if this.model.portal.primary_school}}
+                <b>Dominant School:</b> {{#link-to 'schools' this.model.portal.primary_school}}
+              {{this.model.portal.primary_school}}
+              {{/link-to}}
+              <br>{{/if}}
+              {{#if this.model.portal.all_schools}}<b>All Schools:</b>
+                {{#each this.model.portal.all_schools as |school|}}
+                  {{#link-to 'schools' school}}{{school}}{{/link-to}}
+                {{/each}}<br>
+              {{/if}}
 
 
-            {{#if this.model.portal.latitude}}
-            <br>
-            <span style="margin: 15px;">
-              <iframe width="300" height="250" frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?q={{this.model.portal.latitude}}%20{{this.model.portal.longitude}}&key=AIzaSyDtQxW3ou9wLCgpLzTHiYQCKLv4YBM3t1c&maptype=satellite" allowfullscreen></iframe>
-            </span>
-            {{/if}}
+              {{#if this.model.portal.latitude}}
+              <br>
+              <span style="margin: 15px;">
+                <iframe width="300" height="250" frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?q={{this.model.portal.latitude}}%20{{this.model.portal.longitude}}&key=AIzaSyDtQxW3ou9wLCgpLzTHiYQCKLv4YBM3t1c&maptype=satellite" allowfullscreen></iframe>
+              </span>
+              {{/if}}
+            </div>
           </div>
         </div>
       </div>
