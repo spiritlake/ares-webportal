@@ -78,7 +78,10 @@
             <div class="play-selector {{if (eq channel.key this.selectedChannel.key) 'play-selector-active' ''}}">
               # {{channel.title}}
               {{#if channel.is_hidden}}
-                  <i class="fa fa-microphone-slash"></i>
+                  <a href="#" {{action "hidePage" false}}  ><i class="fa fa-microphone-slash"></i></a>
+              {{else}}
+                  <a href="#" {{action "hidePage" true}}  ><i class="fa fa-microphone"></i></a>
+
               {{/if}}
               <span class="badge rounded-pill bg-primary">{{channel.new_messages}}</span>
             </div>
