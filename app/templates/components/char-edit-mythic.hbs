@@ -10,7 +10,7 @@
       {{this.char.custom.mythic_name}}
     </div>
     <div class="col-sm-9">
-      <Input @type="text" size={{25}} @value={{char.custom.mythic_name}} />
+      <Input @type="text" size={{25}} @value={{this.char.custom.mythic_name}} />
     </div>
   </div>
 
@@ -19,7 +19,7 @@
       <b>About</b>
     </div>
     <div class="col-sm-9">
-      <MarkdownEditor @text={{char.custom.mythic_about}} />
+      <MarkdownEditor @text={{this.char.custom.mythic_about}} />
     </div>
   </div>
 
@@ -28,7 +28,7 @@
       <b>Description</b>
     </div>
     <div class="col-sm-9">
-      <MarkdownEditor @text={{char.custom.mythic_desc}} />
+      <MarkdownEditor @text={{this.char.custom.mythic_desc}} />
     </div>
   </div>
 
@@ -37,6 +37,6 @@
       <b>Short desc</b>
     </div>
     <div class="col-sm-9">
-      <Input @type="text" size={{35}} @value={{char.custom.mythic_shortdesc}} />
+      <Input @type="text" size={{35}} @value={{this.char.custom.mythic_shortdesc}} />
     </div>
   </div>
