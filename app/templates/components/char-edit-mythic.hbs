@@ -1,16 +1,16 @@
-  1{{this.char.custom.mythic_name}}
+  1{{this.model.char.custom.mythic_name}}
 
-  2{{this.char.custom.mythic_name}}
+  2{{this.model.char.custom.mythic_name}}
 
-  3{{this.char.custom}}
+  3{{this.model.char.custom}}
 
   <div class="form-group row">
     <div class="col-sm-3">
       <b>Name</b>
-      {{this.char.custom.mythic_name}}
+      {{this.model.char.custom.mythic_name}}
     </div>
     <div class="col-sm-9">
-      <Input @type="text" size={{25}} @value={{this.char.custom.mythic_name}} />
+      <Input @type="text" size={{25}} @value={{this.model.char.custom.mythic_name}} />
     </div>
   </div>
 
@@ -19,7 +19,7 @@
       <b>About</b>
     </div>
     <div class="col-sm-9">
-      <MarkdownEditor @text={{this.char.custom.mythic_about}} />
+      <MarkdownEditor @text={{this.model.char.custom.mythic_about}} />
     </div>
   </div>
 
@@ -28,7 +28,7 @@
       <b>Description</b>
     </div>
     <div class="col-sm-9">
-      <MarkdownEditor @text={{this.char.custom.mythic_desc}} />
+      <MarkdownEditor @text={{this.model.char.custom.mythic_desc}} />
     </div>
   </div>
 
@@ -37,6 +37,6 @@
       <b>Short desc</b>
     </div>
     <div class="col-sm-9">
-      <Input @type="text" size={{35}} @value={{this.char.custom.mythic_shortdesc}} />
+      <Input @type="text" size={{35}} @value={{this.model.char.custom.mythic_shortdesc}} />
     </div>
   </div>
